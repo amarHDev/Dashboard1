@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="Css/style.css">
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="Js/main.js"></script>
+
+<title>Admin</title>
+
+
+</head>
+<body>
+
+    <div class="main" id="main">
+		
+		<div class="left" style="margin-top: 4%">
+		  <ul >
+          <li class="menu-heading">  AdminPOS</li>
+
+                <li id="menu-item4"><a data-toggle="tab" href="#landing"><i class="fa fa-home fa-lg"></i> Tableau de bord</a></li>
+                <li id="menu-item3"><a data-toggle="tab" href="#analytics"><i class="fa fa-th"></i> POS</a></li>
+            
+                <li id="menu-item1" >
+                    <a href="#" class="toggle-custom" id="btn-1" data-toggle="collapse" data-target="#submenu1" aria-expanded="false"><span class="glyphicon glyphicon-plus" aria-hidden="true"><i class="fa fa-home fa-lg"></i>Produits<i id="fa1" class="fa fa-arrow-right" aria-hidden="true"></i></span></a>
+                    <ul class="nav collapse" id="submenu1" role="menu" aria-labelledby="btn-1">
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Liste des produits</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></i>Ajouter produit</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </li>
+
+                <li id="menu-item2" >
+                        <a href="#" class="toggle-custom" id="btn-1" data-toggle="collapse" data-target="#submenu2" aria-expanded="false"><span class="glyphicon glyphicon-plus" aria-hidden="true"><i class="fa fa-tachometer fa-lg"></i> Categories<i id="fa2" class="fa fa-arrow-right" aria-hidden="true"></i></span></a>
+                        <ul class="nav collapse" id="submenu2" role="menu" aria-labelledby="btn-1">
+                            <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Liste des categories</a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Ajouter categorie</a>
+                            </li>
+                            
+                        </ul>
+                        
+                </li>
+
+               
+               
+              
+             
+                
+          <li class="menu-heading">Paramètres</li>
+
+                <li id="menu-item5"><a data-toggle="tab" href="#projects"><i class="fa fa-table fa-lg"></i>Stock</a></li>
+
+                <li id="menu-item6" >
+                    <a href="#" class="toggle-custom" id="btn-1" data-toggle="collapse" data-target="#submenu3" aria-expanded="false"><span class="glyphicon glyphicon-plus" ><i class="fa fa-street-view fa-lg"></i> Employer<i id="fa3" class="fa fa-arrow-right" aria-hidden="true"></i></span></a>
+                    <ul class="nav collapse" id="submenu3" role="menu" aria-labelledby="btn-1">
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Liste des Employer</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Ajouter Employer</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Profil ADMIN</a>
+                        </li>
+                    
+                    </ul>
+                
+                </li>
+         
+                <li id="menu-item3"><a data-toggle="tab" href="#analytics"><i class="fa fa-line-chart fa-lg"></i> Statistiques</a></li>
+                <li id="menu-item8"><a  href="#invoices"><i class="fa fa-files-o fa-lg"></i>Caisses</a></li>
+             
+		  </ul>
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="right"> 
+            <div class="tab-content">
+
+
+
+
+
+
+
+
+     <!--Navigation-->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-default fixed-top" id="mainNav">
+      <a class="navbar-brand" href="index.html"><img src="img/logo.png" data-retina="true" alt="" width="163" height="36"></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+       
+        
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-fw fa-envelope"></i>
+              <span class="d-lg-none">Messages
+                <span class="badge badge-pill badge-primary">12 New</span>
+              </span>
+              <span class="indicator text-primary d-none d-lg-block">
+                <i class="fa fa-fw fa-circle"></i>
+              </span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="messagesDropdown">
+              <h6 class="dropdown-header">Nouveaux messages:</h6>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <strong>Goutal ameqrane</strong>
+                <span class="small float-right text-muted">7:38 AM</span>
+                <div class="dropdown-message small">Je vous ai envoyé les fichiers finaux pour examen. Lorsque vous pourrez vous déconnecter, faites-le moi savoir et nous pourrons discuter de la distribution. </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <strong>Bouzourene madjid</strong>
+                <span class="small float-right text-muted">8:00 AM</span>
+                <div class="dropdown-message small">Je me demandais si vous pouviez vous rencontrer pour un rendez-vous à 15h00 au lieu de 16h00. Merci!</div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <strong>Nassima remdani</strong>
+                <span class="small float-right text-muted">11:30 AM</span>
+                <div class="dropdown-message small">slt, je voulais juste vous prévenir que je serai pas disponible demain comme convenu, je vous recontacterai ulterieurement pour programmer un notre rendez-vous ! bonne journée</div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item small" href="#">Voir tout les messages.</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-fw fa-bell"></i>
+              <span class="d-lg-none">Alerts
+                <span class="badge badge-pill badge-warning">6 News</span>
+              </span>
+              <span class="indicator text-warning d-none d-lg-block">
+                <i class="fa fa-fw fa-circle"></i>
+              </span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="alertsDropdown">
+              <h6 class="dropdown-header">Alerts:</h6>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <span class="text-success">
+                  <strong>
+                    <i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
+                </span>
+                <span class="small float-right text-muted">9:00 AM</span>
+                <div class="dropdown-message small">Il s'agit d'un message de réponse de serveur automatisé. Tous les systèmes sont en ligne.</div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <span class="text-danger">
+                  <strong>
+                    <i class="fa fa-long-arrow-down fa-fw"></i>Status Update</strong>
+                </span>
+                <span class="small float-right text-muted">9:45 AM</span>
+                <div class="dropdown-message small">Il s'agit d'un message de réponse de serveur automatisé. Tous les systèmes sont en ligne.</div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <span class="text-success">
+                  <strong>
+                    <i class="fa fa-long-arrow-up fa-fw"></i>Status Update</strong>
+                </span>
+                <span class="small float-right text-muted">15:21 AM</span>
+                <div class="dropdown-message small">Il s'agit d'un message de réponse de serveur automatisé. Tous les systèmes sont en ligne.</div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item small" href="#">Voire toutes les alerts</a>
+            </div>
+          </li>
+
+
+
+
+
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                <span class="d-lg-none">Messages
+                  <span class="badge badge-pill badge-primary">12 News</span>
+                </span>
+                
+              </a>
+              <div class="dropdown-menu" aria-labelledby="messagesDropdown">
+            
+              
+                <a class="dropdown-item" href="#">
+                    <i class="fa fa-user" aria-hidden="true"></i><strong style="margin-left: 20px;">Mon Compte</strong>
+    
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">
+                    <i class="fa fa-sliders" aria-hidden="true"></i><strong style="margin-left: 20px;">Paramètres</strong>
+    
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">
+                    <i class="fa fa-line-chart fa-lg" aria-hidden="true"></i><strong style="margin-left: 20px;">Statistiques</strong>
+    
+                </a>
+                
+              </div>
+            </li>
+          <li class="nav-item">
+            <form class="form-inline my-2 my-lg-0 mr-lg-2">
+              <div class="input-group">
+                <input class="form-control search-top" type="text" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button class="btn btn-primary" type="button">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </span>
+              </div>
+            </form>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+              <i class="fa fa-fw fa-sign-out"></i>Déconnexion</a>
+          </li>
+        
+    
+          
+          
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Overview -->
+         <div id="overview" class="tab-pane active"  >
+                <div class="content" >
+                  
+
+
+
+           
+               <div class="content-wrapper">
+                 <div class="container-fluid">
+
+
+
+
+                      <!--==================================== Ajoute les bout de code de chaque page ici =====================================-->
+
+  
+                           
+
+                       <!--================================================= FIN DE L'AJOUT ===================================================-->
+      
+      
+      
+     
+      </div>
+      <!-- /.container-fluid-->
+       </div>  <!-- /content-wrapper-->
+
+
+
+
+
+
+
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  
+                </div>
+                </div>
+             </div><!--Right panel-->
+</div><!--Main-->
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
