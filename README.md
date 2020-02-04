@@ -5,7 +5,7 @@ Build point of sale dashboard with HTML and CSS
 Take a look for the final rendering here  https://posdashboard1.netlify.com/ .
 
 
-# for more details about me 
+# For more details about me 
 Visit my portfolio at https://henni-amar-cv.netlify.com/
 
 
